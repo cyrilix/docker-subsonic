@@ -17,11 +17,11 @@ $ docker build -t <your-name>/docker-subsonic .
 A current image is available as a trusted build from the Docker index:
 
 ```shell
-$ docker pull  cyrilix/docker-subsonic
+$ docker pull  cyrilix/subsonic
 ```
 
 The repository page is at
-https://index.docker.io/u/cyrilix/docker-subsonic/
+https://index.docker.io/u/cyrilix/subsonic/
 
 
 ## Run a container with this image
@@ -34,3 +34,11 @@ $ docker run \
   <your-name>/subsonic
 
 ```
+
+## Configuration
+
+Specify env variables:
+
+  * CONTEXT_PATH =  The context path, i.e., the last part of the Subsonic URL. Typically '/' or '/subsonic'. Default '/'
+  * PORT = The port on which Subsonic will listen for incoming HTTP traffic. Default: 8080
+  
