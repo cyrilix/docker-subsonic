@@ -12,6 +12,7 @@ RUN     apt-get update &&\
         apt-get -y install libav-tools lame &&\
         adduser --system --home /opt/subsonic subsonic &&\
         mkdir -p /opt/data/transcode /opt/music/ &&\
+        chown -R subsonic /opt/data
         ln -s /usr/bin/lame /opt/data/transcode/lame &&\
         ln -s /usr/bin/avconv /opt/data/transcode/ffmpeg &&\
         wget "http://downloads.sourceforge.net/project/subsonic/subsonic/$SUBSONIC_VERSION/subsonic-$SUBSONIC_VERSION-standalone.tar.gz?r=http%3A%2F%2Fwww.subsonic.org%2Fpages%2Fdownload2.jsp%3Ftarget%3Dsubsonic-$SUBSONIC_VERSION-standalone.tar.gz&ts=1431096340&use_mirror=garr" \
