@@ -1,7 +1,7 @@
 FROM java:8
 MAINTAINER Cyrille Nofficial<cynoffic@cyrilix.fr>
 
-ENV SUBSONIC_VERSION 5.3.beta2
+ENV SUBSONIC_VERSION 5.3
 ENV PORT 8080
 ENV CONTEXT_PATH /
 
