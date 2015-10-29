@@ -17,6 +17,7 @@ RUN     apt-get update &&\
         -O subsonic.war.zip --quiet  &&\
         unzip subsonic.war.zip && rm subsonic.war.zip && mv subsonic.war ROOT.war
 
+ADD server.xml /usr/local/tomcat/conf/
 ENV JAVA_OPTS="-Dsubsonic.contextPath=/ -Dsubsonic.home=/opt/data -Dsubsonic.defaultMusicFolder=/opt/music/ -Dsubsonic.defaultPodcastFolder=/opt/podcast/ -Dsubsonic.defaultPlaylistFolder=/opt/playlist/"
 
 VOLUME /opt/data
