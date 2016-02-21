@@ -1,7 +1,7 @@
 FROM tomcat:8-jre8
 MAINTAINER Cyrille Nofficial<cynoffic@cyrilix.fr>
 
-ENV SUBSONIC_VERSION 5.3
+ENV SUBSONIC_VERSION 6.0.beta1
 
 LABEL version="$SUBSONIC_VERSION"
 LABEL description="Subsonic media streamer"
