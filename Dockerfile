@@ -1,5 +1,5 @@
 FROM tomcat:8-jre8
-MAINTAINER Cyrille Nofficial<cynoffic@cyrilix.fr>
+LABEL MAINTAINER Cyrille Nofficial<cynoffic@cyrilix.fr>
 
 ENV SUBSONIC_VERSION 6.0
 
